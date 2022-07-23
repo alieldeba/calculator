@@ -6,6 +6,10 @@ let clearAll = document.querySelector("#clear-all");
 
 btns.forEach(function (btn) {
   btn.addEventListener("click", function () {
+    // checking if Syntax Error or undefined or NaN or infinity
+    if (text.innerText.match(/s|u|n|i/gi)) {
+      text.innerText = "";
+    }
     text.innerText += btn.innerText;
   });
 });

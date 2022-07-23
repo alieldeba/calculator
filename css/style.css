@@ -25,6 +25,7 @@ body {
   height: 100px;
   background-color: rgb(22, 22, 22);
   position: relative;
+  overflow-x: scroll;
 }
 .calculator .screen p {
   color: white;
