@@ -45,8 +45,8 @@ body {
   gap: 5px;
 }
 .calculator .buttons button {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
 }
 .calculator .buttons button:active {
   -webkit-box-shadow: inset 1px 1px 10px rgb(100, 100, 100);

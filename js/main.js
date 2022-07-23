@@ -7,7 +7,8 @@ let clearAll = document.querySelector("#clear-all");
 btns.forEach(function (btn) {
   btn.addEventListener("click", function () {
     // checking if Syntax Error or undefined or NaN or infinity
-    if (text.innerText.match(/s|u|n|i/gi)) {
+    //  [\u0621-\u064A]+ is for matching arabic letters
+    if (text.innerText.match(/s|u|n|i/i)) {
       text.innerText = "";
     }
     text.innerText += btn.innerText;
